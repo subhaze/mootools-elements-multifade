@@ -1,7 +1,7 @@
 /*
 ---
 
-name: Elements.Highlight
+name: Elements.multiFade
 
 description: Sets full opacity to element that is moused over while dimming all other elements of same class.
 
@@ -11,7 +11,7 @@ requires:
   - Core/Elements
   - Core/Fx.Tween
 
-provides: Elements.highlight
+provides: Elements.multiFade
 
 authors: [Michael Russell]
 
