@@ -10,7 +10,7 @@ and activated on mouseover/out events causing the surrounding elements and not t
 
 Sets full opacity to element that is moused over while dimming all other elements of same class.
 
-![Screenshot](http://github.com/subhaze/mootools-element-highlight/raw/master/logo.png)
+![Screenshot](http://github.com/subhaze/mootools-elements-multifade/raw/master/logo.png)
 
 How to use
 ----------
