@@ -10,7 +10,7 @@ tags:     "[navigation, tween, element, effects]"
 
 demo:     "http://mootools.net/shell/JZVZA/"
 
-current: "v1.0"
+current: "v1.1"
 
 sources:
   - "Source/Elements.MultiFade.js"
