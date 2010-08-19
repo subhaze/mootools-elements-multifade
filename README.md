@@ -19,14 +19,14 @@ How to use
 ----------
 
 JavaScript
-	
+	#JS
 	// Use any selector to grab elements that you wish to apply this effect to.
 	$$( '.link' ).multiFade();
 	
 	// Over ride the default opacity value of .3
 	$$('.link').multiFade(.5);
 HTML
-
+	#HTML
 	<div id="link-container">
 		<a class="link" href="#"></a>
 		<a class="link" href="#"></a>
