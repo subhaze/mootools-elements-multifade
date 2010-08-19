@@ -26,13 +26,13 @@ Elements.implement({
 		    elems = this;
 		    
 		this.addEvents({
-		  'mouseover':  function( e ) {
+		  'mouseenter':  function( e ) {
 		    elems.each( function( elem ) {
 		      if( elem != e.target ) elem.tween( 'opacity', opacity );
 		    });
 		  },
 		  
-		  'mouseout':   function( e ) {
+		  'mouseleave':   function( e ) {
 		    elems.each( function( elem ){
 		      elem.tween( 'opacity', 1);
 		    });
