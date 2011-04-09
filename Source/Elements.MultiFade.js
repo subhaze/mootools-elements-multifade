@@ -19,25 +19,18 @@ authors: [Michael Russell]
 */
 
 Elements.implement({
-
-	multiFade: function( opacity ) {
-	  
-		var opacity = ( opacity ) ? opacity : .3,
-		    elems = this;
-		    
+	multiFade: function(opacity){
+		var elems = this;
+		if(!opacity) opacity = 0.3;
 		this.addEvents({
-		  'mouseenter':  function( e ) {
-		    elems.each( function( elem ) {
-		      if( elem != e.target ) elem.tween( 'opacity', opacity );
-		    });
-		  },
-		  
-		  'mouseleave':   function( e ) {
-		    elems.each( function( elem ){
-		      elem.tween( 'opacity', 1);
-		    });
-		  }
+			'mouseenter':	function(){
+				elems.filter(function(item){
+					if(item != this) return item;
+				}.bind(this)).tween('opacity', opacity);
+			},
+			'mouseleave':	function(){
+				elems.tween('opacity', 1);
+			}
 		});
-		
 	}
 });
